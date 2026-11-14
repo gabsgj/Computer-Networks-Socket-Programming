@@ -1,0 +1,4 @@
+Computer Networks Laboratory File Transfer Demonstration
+This file is served concurrently across individual worker processes.
+Each client request is delegated to a separate multiprocessing.Process instance,
+providing process isolation, distinct memory address spaces, and dedicated PIDs.

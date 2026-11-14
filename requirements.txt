@@ -1,0 +1,6 @@
+# Computer Networks: First Principles & Socket Systems
+# Core networking uses Python 3.10+ Standard Library:
+# socket, struct, select, selectors, threading, multiprocessing, pickle, unittest
+# Optional benchmarking and visualization:
+matplotlib>=3.7.0
+numpy>=1.24.0
