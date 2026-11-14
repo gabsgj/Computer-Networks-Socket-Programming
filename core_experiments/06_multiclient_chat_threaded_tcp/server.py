@@ -55,8 +55,7 @@ def start_server():
             thread = threading.Thread(target=handle_client, args=(conn, addr), daemon=True)
             thread.start()
     except KeyboardInterrupt:
-        print('
-Shutting down chat server.')
+        print('\nShutting down chat server.')
     finally:
         server.close()
 

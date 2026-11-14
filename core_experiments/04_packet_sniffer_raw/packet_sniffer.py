@@ -26,8 +26,7 @@ def run_sniffer():
         return
 
     print('Packet Capturer Started...')
-    print('Listening for Ethernet frames (press Ctrl+C to stop)...
-')
+    print('Listening for Ethernet frames (press Ctrl+C to stop)...')
 
     packet_count = 0
     try:
@@ -62,8 +61,7 @@ def run_sniffer():
                 print(f'TTL             : {ttl}')
                 print(f'Protocol        : {proto_name}')
     except KeyboardInterrupt:
-        print('
-Sniffer stopped by user.')
+        print('Sniffer stopped by user.')
     finally:
         s.close()
 

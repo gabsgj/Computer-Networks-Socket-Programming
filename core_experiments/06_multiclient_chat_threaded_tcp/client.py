@@ -10,8 +10,7 @@ def receive_messages(sock):
         try:
             data = sock.recv(1024)
             if not data:
-                print('
-[Connection closed by server]')
+                print('\n[Connection closed by server]')
                 break
             print(data.decode().strip())
         except OSError:
@@ -35,8 +34,7 @@ def run_client():
                 continue
             if msg.lower() == 'exit':
                 break
-            formatted = f'[{name}]: {msg}
-'
+            formatted = f'[{name}]: {msg}\n'
             sock.sendall(formatted.encode())
     except (EOFError, KeyboardInterrupt):
         pass
